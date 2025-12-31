@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosm3SecureChat | Enterprise Grade Privacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#05070A',
+                            card: '#0F1219',
+                            accent: '#00DC82',
+                            primary: '#3B82F6',
+                            border: 'rgba(255, 255, 255, 0.08)'
+                        }
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #05070A;
+            color: #E2E8F0;
+            background-image:
+                radial-gradient(circle at 50% -10%, rgba(59, 130, 246, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 0% 40%, rgba(0, 220, 130, 0.04) 0%, transparent 30%);
+            background-attachment: fixed;
+        }
+
+        .glass-panel {
+            background: rgba(15, 18, 25, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #FFFFFF 0%, #94A3B8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-glow-hover:hover {
+            box-shadow: 0 0 40px rgba(0, 220, 130, 0.4);
+            border-color: rgba(0, 220, 130, 0.6);
+        }
+
+        .app-screenshot {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .screenshot-container:hover .app-screenshot {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen">
+
+    <nav class="fixed w-full z-50 top-0 border-b border-brand-border bg-brand-dark/90 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <img src="assets/logo.png" alt="Cosm3 Logo" class="w-8 h-8 rounded-md">
+                    <span class="font-mono text-brand-accent font-bold tracking-tighter">COSM3_SECURE</span>
+                </div>
+                <div
+                    class="hidden sm:inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-brand-accent/10 text-brand-accent border border-brand-accent/20">
+                    <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse mr-2"></span>
+                    V2.4 Online
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-4">
+
+        <section class="max-w-4xl mx-auto text-center mb-24">
+            <a href="https://linktr.ee/cosmenoide" target="_blank" rel="noopener noreferrer"
+                class="relative inline-block mb-10 group cursor-pointer">
+                <div
+                    class="absolute inset-0 bg-brand-accent/20 blur-3xl rounded-full group-hover:bg-brand-accent/40 transition-all duration-700">
+                </div>
+                <img src="assets/logo.png" alt="Cosm3 Logo"
+                    class="relative w-32 h-32 md:w-40 md:h-40 rounded-[2.5rem] border border-white/10 shadow-2xl mx-auto object-cover transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-2 logo-glow-hover">
+            </a>
+
+            <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-6">
+                <span class="hero-gradient">Cosm3</span><br>
+                <span class="text-brand-primary">SecureChat</span>
+            </h1>
+
+            <p class="text-xl text-gray-400 font-light mb-12 max-w-2xl mx-auto">
+                Blindaje criptográfico de extremo a extremo. <br class="hidden md:block">
+                Tus datos nunca tocan un servidor central.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+                <a href="https://www.mediafire.com/file/td5cjyj8iovtimb/Cosm3SecureCh4t.apk/file" target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-brand-primary hover:bg-blue-600 w-full sm:w-auto px-10 py-5 rounded-2xl flex items-center justify-center gap-3 text-white font-bold text-lg transition-all shadow-lg shadow-blue-900/20">
+                    Descargar APK
+                </a>
+                <a href="https://shieldchat-9434d.web.app/" target="_blank" rel="noopener noreferrer"
+                    class="w-full sm:w-auto px-10 py-5 rounded-2xl glass-panel border border-white/10 text-white font-bold text-lg hover:bg-white/5 transition-all">
+                    Web App
+                </a>
+            </div>
+
+            <div class="rounded-3xl overflow-hidden border border-white/10 max-w-lg mx-auto shadow-2xl bg-black">
+                <div class="flex items-center gap-2 px-4 py-3 bg-[#0F1219] border-b border-white/5">
+                    <div class="flex gap-1.5">
+                        <div class="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/40"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/40"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/40"></div>
+                    </div>
+                    <div class="mx-auto text-[10px] font-mono text-gray-500 tracking-widest uppercase">
+                        video_demo_short.mp4</div>
+                </div>
+                <div class="aspect-[9/16] bg-black">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/rBgVvJzQh-w"
+                        title="Cosm3SecureChat Demo" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto mb-32 pt-20 border-t border-white/5">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">La App en Acción</h2>
+                <p class="text-gray-500 font-mono text-sm">PROCESOS DE EJECUCIÓN Y SEGURIDAD EN TIEMPO REAL</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div
+                    class="screenshot-container group relative rounded-3xl overflow-hidden border border-white/5 bg-brand-card aspect-[9/16]">
+                    <img src="assets/1.jpeg" alt="Pantalla de Inicio" class="app-screenshot w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-60">
+                    </div>
+                    <div class="absolute bottom-6 left-6">
+                        <span
+                            class="bg-brand-accent/20 text-brand-accent text-[10px] font-mono px-2 py-1 rounded border border-brand-accent/30">01_IDENTIDAD</span>
+                    </div>
+                </div>
+
+                <div
+                    class="screenshot-container group relative rounded-3xl overflow-hidden border border-white/5 bg-brand-card aspect-[9/16]">
+                    <img src="assets/2.jpeg" alt="Chat Cifrado" class="app-screenshot w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-60">
+                    </div>
+                    <div class="absolute bottom-6 left-6">
+                        <span
+                            class="bg-brand-primary/20 text-brand-primary text-[10px] font-mono px-2 py-1 rounded border border-brand-primary/30">02_ENCRIPTACIÓN</span>
+                    </div>
+                </div>
+
+                <div
+                    class="screenshot-container group relative rounded-3xl overflow-hidden border border-white/5 bg-brand-card aspect-[9/16]">
+                    <img src="assets/3.jpeg" alt="Configuración de Seguridad"
+                        class="app-screenshot w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-60">
+                    </div>
+                    <div class="absolute bottom-6 left-6">
+                        <span
+                            class="bg-purple-500/20 text-purple-400 text-[10px] font-mono px-2 py-1 rounded border border-purple-500/30">03_PROTOCOLOS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-brand-card/30 p-8 md:p-16 rounded-[3rem] border border-white/5">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded-full bg-brand-accent/20 text-brand-accent flex items-center justify-center text-sm font-mono">?</span>
+                        ¿Cómo funciona?
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="font-mono text-brand-accent shrink-0">01</div>
+                            <p class="text-gray-400 text-sm"><strong class="text-white">Handshake
+                                    Descentralizado:</strong> Intercambio de llaves RSA de 4096 bits sin intermediarios.
+                            </p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="font-mono text-brand-primary shrink-0">02</div>
+                            <p class="text-gray-400 text-sm"><strong class="text-white">Cifrado de Capas:</strong>
+                                Mensajes fragmentados y cifrados con AES-256-GCM.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="font-mono text-purple-400 shrink-0">03</div>
+                            <p class="text-gray-400 text-sm"><strong class="text-white">Limpieza de Memoria:</strong>
+                                Sobrescritura de buffers tras el cierre para evitar Memory Dumping.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl border-brand-accent/10">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></div>
+                        <span class="font-mono text-[10px] text-brand-accent tracking-widest uppercase">System Core
+                            Status</span>
+                    </div>
+                    <pre class="font-mono text-[11px] text-gray-500 overflow-hidden leading-relaxed">
+[PROCESS] Starting Cosm3SecureChat...
+[INFO] Loading local keystore [SUCCESS]
+[INFO] Establishing P2P Tunnel...
+[INFO] Entropy pool: 256-bit [VERIFIED]
+[SEC] Anti-screenshot: ACTIVE
+[SEC] Memory scrubbing: ACTIVE
+[STATUS] Ready for secure communication.
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-brand-border py-12 text-center">
+        <p class="text-[10px] text-gray-600 font-mono tracking-widest uppercase mb-4">Cosm3SecureChat // Protocol V2.4
+        </p>
+        <div class="flex justify-center gap-8 mb-8">
+            <a href="https://linktr.ee/cosmenoide" target="_blank" rel="noopener noreferrer"
+                class="text-gray-500 hover:text-brand-accent transition-colors">Linktree</a>
+            <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacidad</a>
+            <a href="#" class="text-gray-500 hover:text-white transition-colors">GitHub</a>
+        </div>
+        <p class="text-xs text-gray-700 font-mono">&copy; 2025 COSM3NO1DE SECURITY SUITE</p>
+    </footer>
+
+</body>
+
+</html>
